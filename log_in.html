@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<link rel="icon" type="image/x-icon" href="i1.png">
+<style> 
+Body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color:  #A293FF ;
+ 
+}
+/* login */
+button { 
+       background-color: black; 
+       width: 35%;
+        color: white; 
+        padding: 15px; 
+        margin: 10px 230px; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        /* border: 2px solid orange;  */
+        cursor: pointer;
+        border-radius: 50px; 
+         } 
+         .button1{
+	height: 60px;
+	width: 150px;
+	padding: 0 auto;
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+	/* top:90px; */
+    margin-top: -30px;
+	left: 60px;;
+	/* bottom: 30px; */
+	background-color: rgb(245, 6, 6);
+	color:white;
+	border-radius: 50px;
+	opacity:1;
+	text-align: center;
+	visibility: visible;
+	justify-content: center;
+	border-style:outset;
+	
+   }
+
+
+ input[type=text], input[type=password] { 
+        width: 35%; 
+        padding: 10px; 
+        margin: 10px 25px;
+        display: inline-block; 
+        border: 2px solid black; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 285px;
+    } 
+      
+   
+ .container { 
+        width:40%;
+        padding: 25px; 
+        background:linear-gradient(45deg,#452bee,#8375e1,#5f49ef);
+        border:1px solid black;
+        border-style: outset;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1><font color="white"> Login Page </font></h1> </center> 
+    <form>
+        <center><div class="container"> 
+            <label><b>Username : </b></label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br>
+            <label><b>Password : </b></label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit"><b>Login</b></button> 
+            <br>
+            <br>
+            <button type="button" class="cancelbtn"><b> Cancel</b></button> 
+            <br>
+            <br>
+            <a href="#">Forgot password? </a> 
+        </center>
+        </div> 
+    </form>   
+    <button type="button" class="button1" onclick="back()" style="top:90% "><span style="justify-content:center;">&lt;&#45;&#45;</span>  Back</button>
+    <script>
+        function back()
+        {
+            window.location="signup.html";
+        }
+    </script>
+    </br>
+</body>   
+</html>

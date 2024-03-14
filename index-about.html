@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="i1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #A293FF !important;
+            height: 500px;
+        }
+        #about{
+            display: inline-block;
+            position: relative;
+            z-index: 3;
+
+        
+        }
+        .button{
+        height: 60px;
+        width: 130px;
+        padding: 0 auto;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: -20px;
+        position: absolute;
+        top:120px;
+        left: 0;;
+        bottom: -20px;
+        background-color: rgb(245, 6, 6);
+        color:white;
+        border-radius: 50px;
+        opacity:1;
+        text-align: center;
+        visibility: visible;
+        justify-content: center;
+        border-style:outset;
+        }
+    </style>
+     <!-- <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css" /> -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="images_set\blob.svg" style="position:absolute; width: 600px; height: 600px; left: -210px; top: -320px;">
+    <h1 style="font-size: 100px; top:-30px;font-family: Helvetica, sans-serif, sans-serif;"><span id="about">About</span> MCT</h1>
+    <p class="fixed-block" style="margin-bottom: 40px;margin-top:-30px; padding:20px; font-size: 24px">Welcome to AI Based Real Time Pose Estimation Training Model <br><br> It is an Ai based system helps to identify the posture and gives feedback or suggestion to user
+        . <br>Using deep learning algorithm , an approach has beeen taken to accurately detect and recognize various posture and detect incorrect posture.
+        Auto mated self-training method for sporting athletical activities can help ethlits to enhance their performance and reduction the risk of injuries .
+        This suggest having instructor around while performing task.This will help users to learn and complete exercise with accuracy provided by monitoring system using pose detection , the application will capable of detecting the pose and monitoring the performance in real-time.
+        </p>
+ 
+        <button type="button" class="button" onclick="back()" style="top:90% "><span style="justify-content:center;">&lt;&#45;&#45;</span>  Back</button>
+        <script>
+            function back()
+            {
+                window.location="index.html";
+            }
+        </script>
+        </body>
+</html>

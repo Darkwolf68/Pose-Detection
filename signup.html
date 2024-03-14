@@ -1,0 +1,100 @@
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Signup Page</title>
+    <!-- <link rel="icon" type="image/x-icon" href="cobra pose.jpeg"> -->
+
+    <link href="signup.css" type="text/css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="i1.png">
+  </head>
+  <body>
+	<img src="i1.png" style="position:absolute; width: 200px; height: 200px; left:0; top: 0">
+   
+  	<div class="container">
+		<h1 style="margin-top:-40px;margin-bottom:10px;"><font color="white"><center >Signup Page</center></font></h1><br>
+		
+      <form method="post" autocomplete="on">
+        <!--First name-->
+    		<div class="box">
+          <label for="firstName" class="fl fontLabel"><b> First Name: </b></label>
+    			<div class="fr">
+    					<input type="text" name="firstName" placeholder="First Name"
+              class="textBox" autofocus="on" required>
+    			</div>
+    			<div class="clr"></div>
+    		</div>
+
+        <!--lecond name-->
+    		<div class="box">
+          <label for="LastName" class="fl fontLabel"><b> Last Name: </b></label>
+    			<div class="fr">
+    					<input type="text" required name="LastName"
+              placeholder="Last Name" class="textBox">
+    			</div>
+    			<div class="clr"></div>
+    		</div>
+    		
+		<!---Phone No.------>
+    		<div class="box">
+          <label for="phone" class="fl fontLabel"><b> Phone No.: </b></label>
+    			<div class="fr">
+    					<input type="text" required name="phoneNo" maxlength="10" placeholder="Phone No" class="textBox">
+    			</div>
+    			<div class="clr"></div>
+    		</div>
+    		
+    		<!---Email ID---->
+    		<div class="box">
+          <label for="email" class="fl fontLabel"><b> Email ID: </b></label>
+    			<div class="fr">
+    					<input type="email" required name="email" placeholder="Email Id" class="textBox">
+    			</div>
+    			<div class="clr"></div>
+    		</div>
+    	
+    		<!---Password------>
+    		<div class="box">
+          <label for="password" class="fl fontLabel"><b> Password </b></label>
+    			<div class="fr">
+    					<input type="Password" required name="password" placeholder="Password" class="textBox">
+    			</div>
+    			<div class="clr"></div>
+    		</div>
+    		
+    		<!---Gender----->
+    		<div class="box radio">
+          <label for="gender" class="fl fontLabel"><b> Gender: </b></label>
+    				<input type="radio" name="Gender" value="Male" required> Male &nbsp; &nbsp; &nbsp; &nbsp;
+    				<input type="radio" name="Gender" value="Female" required> Female
+    		</div>
+    		
+    		<!---Submit Button------>
+    		<div class="box" ><center>
+    				<input type="Submit" name="Submit" class="submit" value="SUBMIT"></center>
+    		</div>
+
+			<!-- already exist -->
+			<div class="box" ><center>
+				<span> Already exist account? <a href="log_in.html"> Log in</a></span>
+		</div>
+
+			<!-- sign in with Google -->
+
+			<div class="box" ><center>
+				<input type="Submit" name="Google" class="google" value="Sign in with Google"></center>
+		</div>
+		
+    		
+      </form>
+	  
+  </div>
+  <button type="button" class="button" onclick="back()" style="top:90% "><span style="justify-content:center;">&lt;&#45;&#45;</span>  Back</button>
+        <script>
+            function back()
+            {
+                window.location="index.html";
+            }
+        </script>
+		</br>
+  </body>
+</html>

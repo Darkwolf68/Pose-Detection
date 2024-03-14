@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="i1.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <style>
+        *{
+          margin:0;
+          padding:0;  
+        }
+        .main-screen{
+            height: 100vh;
+            width:100%;
+
+          
+          
+            
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            /* padding-right: 10px; */
+            padding-left:15px;
+            background-color: #A293ff;
+            color:#FFFFFF;
+            
+        }
+        .box{
+            height: 230px;
+            width: 450px;
+            padding:20px;
+            padding-top:30px;
+            /* float: left; */
+            display: inline-block;
+            position: relative;
+           
+            margin-top: 50px;
+            margin-right: 50px; 
+            margin-left:20px;
+            
+   
+    border-style: inset;
+    /* background-color: #7563ee; */
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background: rgba(87, 73, 174, 0.37);
+
+  
+            
+            border: 1px solid white;
+        }
+        h1{
+            display: inline-block;
+            
+            /* display: block; */
+            z-index: 3;
+           margin-top:-250px;
+            /* left: 150px; */
+            /* right:0; */
+            /* text-align: center; */
+            /* white-space: nowrap; */
+        }
+        @media screen and (max-width:400px){
+            .main-screen{
+                width: 100%;
+            }
+            .box{
+                width: 100%;
+            }
+        }
+        #clear{
+            clear: both;
+        }
+        .header{
+            position: absolute;
+            top:0;
+            margin-top:-60px;
+            /* margin-left:10px; */
+
+        }
+        .button{
+        height: 60px;
+        width: 130px;
+        padding: 0 auto;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: -20px;
+        position: absolute;
+        top:120px;
+        left: 0;;
+        bottom: -20px;
+        background-color: rgb(245, 6, 6);
+        color:white;
+        border-radius: 50px;
+        opacity:1;
+        text-align: center;
+        visibility: visible;
+        justify-content: center;
+        border-style:outset;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-screen">
+    <img src="images_set\blob.svg" style="position:absolute; width: 600px; height: 600px; left: -210px; top: -330px;">
+    <img src="i1.png" style="position:absolute; width: 200px; height: 200px; right:0; top: 0">
+
+    <h1 style="position:absolute;font-size:100px; left:100px; margin-top:-600px;font-family: Helvetica, sans-serif, sans-serif">Team Members</h1>
+    
+    <div class="box"><p>Baria Priyanshu </p>
+        <p>B-TECH CSE SEM:-4 <sup>th</sup></p>
+        
+
+<img src="images_set\blob.svg" style="position:absolute; width: 100px; height: 100px; top:0; left:0; margin-top: -94px; margin-left: -24px; color:#FFFFFF; font-size: 10px; "><span class="header">1.</span></div>
+    <div class="box"><p>Durga Samir</p>
+        <p>B-TECH CSE SEM:-4 <sup>th</sup></p>
+        <img src="images_set\blob.svg" style="position:absolute; width: 100px; height: 100px; top:0; left:0; margin-top: -94px; margin-left: -24px; color:#FFFFFF; font-size: 10px; "><span class="header">2.</span></div>
+    <div class="box"><img src="images_set\blob.svg" style="position:absolute; width: 100px; height: 100px; top:0; left:0; margin-top: -94px; margin-left: -24px; color:#FFFFFF; font-size: 10px; "><span class="header">3.</span><p>Khamar Prerak </p>
+        <p>B-TECH CSE SEM:-4 <sup>th</sup></p>
+        </div>
+    <div class="box"><img src="images_set\blob.svg" style="position:absolute; width: 100px; height: 100px; top:0; left:0; margin-top: -94px; margin-left: -24px; color:#FFFFFF; font-size: 10px; "><span class="header">4.</span><p>Gandhi Pushya </p>
+        <p>B-TECH CSE SEM:-4 <sup>th</sup></p>
+        </div>
+    <button type="button" class="button" onclick="back()" style="top:90% "><span style="justify-content:center;">&lt;&#45;&#45;</span>  Back</button>
+        <script>
+            function back()
+            {
+                window.location="index.html";
+            }
+        </script>
+</div>
+
+</body>
+</html>

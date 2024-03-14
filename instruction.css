@@ -1,0 +1,38 @@
+h1{
+    font-family:cursive;
+    color:firebrick;
+    padding-left: 7%;
+    padding-top:0% ;
+    font-size: 170%;
+}
+p{
+    font-family: cursive;
+    color:crimson;
+    padding-left: 13% ;
+    font-size: 130%;
+    
+}
+.container{
+    font-size: 100%;
+    padding-left: 60%;
+    padding-top: 1%;
+}
+.img{
+    padding-left: 10%;
+    padding-top: 2%;
+    opacity:10;
+    visibility: visible;
+    transform: scale(1,1) rotate(-3deg);
+}
+.img1{
+    padding-left: 60%;
+}
+.img2{
+    padding-left: 10%;
+}
+.img3{
+    padding-left: 70%;
+}
+.img4{
+    padding-left: 15%;
+}

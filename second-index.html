@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training program</title>
+    <link rel="icon" type="image/x-icon" href="i1.png">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+            margin-top: 0;
+        }
+        img{
+            height: 350px;
+            width: 350px;
+            padding:0;
+          
+            transition:.5s;
+            border: 3px solid white;
+            
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .container{
+            height: 100%;
+            width:100%;
+            /* margin-top: 20px; */
+            /* background: -webkit-linear-gradient(45deg,rgb(239, 232, 247),rgb(185, 113, 252)); */
+            /* background: -webkit-linear-gradient(45deg,rgb(239, 232, 247),rgb(135, 9, 252)); */
+            background-color: #A293FF;
+            position: relative;
+            overflow: auto;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+                    }
+        .card{
+            height: 350px;
+            margin: 50px;
+            margin-top: 10px;
+            box-shadow: 5px 5px 20px black;
+            border-radius: 3px;
+            margin-left: 180px;
+            margin-right: 60px;
+        }
+        .intro{
+            height: 70px;
+            width: 350px;
+            padding:6px;
+            box-sizing: border-box;
+            position: absolute;
+            background: rgb(27,27,27,.5);
+            color:white;
+            transition:.5s;
+            
+        }
+        h1{
+            margin: 5px;
+            font-size: 35px;
+
+        }
+       p{
+        font-size: 20px;
+        margin:20px;
+        visibility: hidden;
+        opacity: 0;
+       }
+       #text{
+        font-size: 100px;
+        font-family: Helvetica, sans-serif, sans-serif;
+          position: absolute;
+         top:0;    
+    color: rgb(255, 255, 255)
+       }
+       span{
+        font-weight: bold;
+       }
+       .card:hover{
+        cursor: pointer;
+       }
+       .card:hover .intro{
+        height: 220px;
+        bottom: 240px;
+        background:black;
+       }
+       .card:hover p{
+        opacity:10;
+        visibility: visible;
+       }
+       .card:hover img{
+        transform: scale(1,1) rotate(-6deg);
+       }
+       .button{
+        height: 70px;
+        width: 150px;
+        padding: 0 auto;
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        top:120px;
+        left: 90px;;
+        bottom: 0;
+        background-color: rgb(245, 6, 6);
+        color:white;
+        border-radius: 50px;
+        opacity:1;
+        text-align: center;
+        visibility: visible;
+        justify-content: center;
+        border-style:outset;
+        
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1 id="text">Be Trained in yourway</h1>
+        <div class="card">
+         <img src="images_set\yogslide.jpg" alt="yoga">
+         <div class="intro">
+            <h1> Yoga</h1>
+            <p>The <span>Yoga</span> movement allows your body to stretchout body and enhance  inner core strength
+            <button class="button" onclick="select()">Select</button>
+        </p>
+            
+         </div>
+       
+         </div>
+
+        <div class="card">
+         <img src="images_set\fitness.png" alt="yoga">
+         <div class="intro">
+            <h1> Workout</h1>
+            <p>The <span>Workout routine is a healthy to increase your muscle power and increase your immunity</span> 
+                <button class="button">Select</button></p>
+           
+         </div>
+       
+         </div>
+
+        <div class="card">
+         <img src="images_set\medite.jpg" alt="yoga">
+         <div class="intro">
+            <h1> Meditation</h1>
+            <p>The <span>Meditation</span> practice gives you a peacefull soul and a happy positive vibes in your daily routine.
+            <button class="button">Select</button>
+        </p>
+            
+         </div>
+       
+         </div>
+         <button type="button" class="button" onclick="back()" style="top:85% "><span style="justify-content:center;">&lt;&#45;&#45;</span>  Back</button>
+    </div>
+</body>
+<script>
+    function back()
+    {
+        window.location="index.html";
+    }
+    function select()
+    {
+        window.location="newpageyoga.html";
+    }
+</script>
+</html>

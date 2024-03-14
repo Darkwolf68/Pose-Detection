@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam</title>
+</head>
+<body><center>
+    
+
+   <div class="video-wrep">
+    <video id="video" playsinline autoplay></video>
+   </div> 
+    
+
+   <div class="controller">
+    <button id="snap">Capture</button>
+   </div>
+
+   <canvas id="canvas" width="640" height="700"></canvas>
+
+   <script>
+
+    'use strict';
+
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const snap = document.getElementById('snap');
+    const errorMsgElement = document.getElementById('span#ErrorMg');
+
+    const constraints = {
+        audio : true,
+        video:{
+            width: 1280, heigth: 640
+        }
+    };
+
+async function init(){
+    try{
+        const stream = await navigator.mediaDevices.getUserMedia(constraints)
+        handlesuccess(stream);
+    }
+
+    catch(e){
+        errorMsgElement.innerHTML = 'navigator.getUserMedia.error:${e.toString()}`';
+
+
+    }
+}
+
+function handlesuccess(stream){
+    window.stream = stream;
+    video.srcObject = stream;
+}
+
+init();
+
+var context = canvas.getContext('2d');
+snap.addEventListener("click",function(){
+    context.drawImage(video,0,0,640,480);
+});
+
+   </script>
+   </center>
+</body>
+</html>
